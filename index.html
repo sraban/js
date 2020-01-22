@@ -10,6 +10,11 @@
 
     <script>
         "use strict";
+	function pr(...params) {
+	  params.forEach(function(v) {
+	    console.log(v);
+	  });
+	}
         function postToKuma(e) {
             window.parent.postMessage(e, "*")
         }
